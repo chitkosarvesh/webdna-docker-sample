@@ -1,0 +1,8 @@
+services:
+  webdna:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html
+    restart: always
